@@ -4,6 +4,254 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>simple-html</title>
+    <!-- 
+        - goole font
+     -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- style -->
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+        color: #212529;
+      }
+      img {
+        width: 100%;
+      }
+      ul > li {
+        list-style: none;
+      }
+      .btn {
+        background: #228be6;
+        border-radius: 4px;
+        border: none;
+        color: #ffffff;
+        font-size: 18px;
+        cursor: pointer;
+        transition: 400ms;
+      }
+      .btn:hover{
+        background: #4dabf7;
+      }
+      q{
+        font-style: italic;
+      }
+    </style>
   </head>
-  <body></body>
+  <body>
+    <header
+      style="
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 24px 32px;
+      "
+    >
+      <div style="width: 180px">
+        <img src="./logo.jpg" alt="logo" />
+      </div>
+      <ul style="display: flex; align-items: center">
+        <li><a href="#" style="text-decoration: none">Images</a></li>
+        <li>
+          <a href="#" style="padding-left: 30px; text-decoration: none"
+            >Videos</a
+          >
+        </li>
+        <li>
+          <a href="#" style="padding-left: 30px; text-decoration: none">News</a>
+        </li>
+        <li>
+          <a
+            href="#"
+            style="
+              padding-left: 30px;
+              padding-right: 30px;
+              text-decoration: none;
+            "
+            >Maps</a
+          >
+        </li>
+        <li>
+          <img
+            src="./avatar.jpg"
+            alt=""
+            style="width: 40px; border-radius: 44px; border: 2px solid #adb5bd"
+          />
+        </li>
+      </ul>
+    </header>
+    <section
+      style="padding: 24px 32px; "
+    >
+    <div style="display: flex; justify-content: center; ">
+      <img src="./doodle.jpg" alt="" style="width: 400px;">
+    </div>
+      <div style="display: flex; justify-content: center; padding-bottom: 80px;">
+        <search>
+          <form>
+            <input style="padding: 14px 94px;border-radius: 24px; border: 1px solid #adb5bd;" type="search"  placeholder="Search Here…">
+            <span style="padding: 0 5px ;"></span>
+            <button type="submit" class="btn" style="padding: 12px 15px;border-radius: 24px;">Search</button>
+          </form>
+        </search>
+      </div>
+      <div style="display: grid; grid-template-columns: repeat(2, 1fr)">
+        <div style="text-align: center">
+          <h1>Heading 1</h1>
+          <h2>Heading 2</h2>
+          <h3>Heading 3</h3>
+          <h4>Heading 4</h4>
+          <h5>Heading 5</h5>
+          <h6>Heading 6</h6>
+          <div style="padding-top: 24px">
+            <button style="padding: 12px 42px" class="btn">CLICK ME</button>
+          </div>
+        </div>
+        <div>
+          <p style="font-size: 16px; padding-right: 64px;">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id
+            doloremque, nesciunt dolores, minima atque alias provident
+            consectetur molestias in harum dolore tenetur cupiditate rerum totam
+            at nobis?
+            <small>Porro, suscipit sunt. Modi est sequi sint quibusdam</small>
+            tenetur quod, soluta blanditiis magnam, mollitia repellat sit
+            pariatur <strong>assumenda neque fugiat libero</strong>, deleniti
+            quia doloribus nihil temporibus omnis minus consequatur excepturi
+            quam fugit. <i>Molestias? Dolorem deleniti eos totam corrupti
+              temporibus at fuga.</i> Pariatur quaerat fuga officia consectetur unde
+            dignissimos earum, beatae ipsum enim at laboriosam voluptas dolore
+            vero veniam possimus! Id delectus modi minus! Fugiat blanditiis
+            fugit reiciendis perspiciatis, <q>iste dolorem quod error amet harum.
+              Recusandae laudantium laboriosam assumenda harum officiis velit
+              eveniet animi ea suscipit quas doloremque ipsam, ratione debitis
+              repudiandae illo molestias.</q>
+          </p>
+        </div>
+      </div>
+    </section>
+    <section style="padding: 24px 32px">
+      <div style="display: flex; justify-content: center">
+        <table>
+          <tr style="padding: 10px">
+            <th>No.</th>
+            <th>Name</th>
+            <th>Price</th>
+          </tr>
+          <tr style="padding: 10px">
+            <td>01</td>
+            <td style="padding: 0 30px">Monitor</td>
+            <td>$200</td>
+          </tr>
+          <tr style="padding: 10px">
+            <td>02</td>
+            <td style="padding: 0 30px">Motherboard</td>
+            <td>$300</td>
+          </tr>
+          <tr style="padding: 10px">
+            <td>03</td>
+            <td style="padding: 0 30px">CPU</td>
+            <td>$400</td>
+          </tr>
+          <tr style="padding: 10px">
+            <td>04</td>
+            <td style="padding: 0 30px">GPU</td>
+            <td>$1100</td>
+          </tr>
+          <tr style="padding: 10px">
+            <td>05</td>
+            <td style="padding: 0 30px">RAM</td>
+            <td>$300</td>
+          </tr>
+          <tr style="padding: 10px">
+            <td></td>
+            <td style="padding: 0 30px">Total Cost</td>
+            <td>$2,300</td>
+          </tr>
+        </table>
+      </div>
+    </section>
+    <section style="padding: 24px 32px">
+      <div style="display: flex; justify-content: center; padding-bottom: 80px;">
+        <search>
+          <form>
+            
+            <div>
+              <br>
+              <input style="padding: 14px 94px;border-radius: 24px; border: 1px solid #adb5bd;" type="text"  placeholder="Username">
+            <span style="padding: 0 10px;"></span>
+            <input style="padding: 14px 94px;border-radius: 24px; border: 1px solid #adb5bd;" type="text"  placeholder="Email">
+            </div>
+            
+            <br>
+
+            <div>
+              <input style="padding: 14px 94px;border-radius: 24px; border: 1px solid #adb5bd;" type="text"  placeholder="Password">
+            <span style="padding: 0 10px;"></span>
+            <input style="padding: 14px 94px;border-radius: 24px; border: 1px solid #adb5bd;" type="text"  placeholder="Password">
+            </div>
+            <br>
+            <div style="display: flex; align-items: center;padding-bottom: 10px; padding-left: 10px;">
+              <div style="padding-right: 20px;">
+                <input type="radio" checked>
+                <label>Male</label>
+              </div>
+              <div style="padding-right: 20px;">
+                <input type="radio">
+                <label>Female</label>
+              </div>
+              <div style="padding-right: 20px;">
+                <input type="radio">
+                <label>Not prefer to say</label>
+              </div>
+            </div>
+     
+            <div style="padding-left: 10px;">
+              <input type="checkbox" />
+              <label>Agreed Temrs & Conditions</label>
+            </div>
+            <br>
+            <button type="submit" class="btn" style="padding: 12px 64px;border-radius: 24px;">Search</button>
+          </form>
+        </search>
+      </div>
+    </section>
+    <footer style="padding: 24px 32px">
+      <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px;">
+        <div style="text-align: center">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur velit atque alias architecto deleniti. Voluptatibus officia incidunt veniam? Voluptates modi numquam repudiandae sit, voluptas sunt debitis dicta velit. Quae, sed!Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur velit atque alias architecto deleniti. Voluptatibus officia incidunt veniam? Voluptates modi numquam repudiandae sit, voluptas sunt debitis dicta velit. Quae, sed!</p>
+        </div>
+        <div></div>
+        <div>
+          <h4 style="padding-bottom: 14px;">Address</h3>
+            <address>
+              <a href="tel:+8801701015425">+8801701015425</a>
+              <br>
+              <a href="mailto:gmsakibursabbir@gmail.com">gmsakibursabbir@gmail.com</a>
+              <p style="padding-top: 10px;">
+                <strong>Street: </strong>Block # C, Banasree, Rampura, 1219
+                <br>
+                <strong>City: </strong> Dhaka
+                <br>
+                <strong>State/province/area: </strong> Dhaka
+                <br>
+                <strong>Zip code: </strong> 1219
+                <br>
+                <strong>Country: </strong> Bangladesh
+              </p>
+            </address>
+        </div>
+      </div>
+    </footer>
+    <div style="background: #228be6; height: 64px;display: flex;justify-content: center; align-items: center;">
+      <p style=" color: #ffffff;">copyright 2023 &copy; gmsakibursabbir</p>
+    </div>
+  </body>
 </html>
